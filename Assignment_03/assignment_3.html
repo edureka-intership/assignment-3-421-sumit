@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Assignment 3</h1>
+        <script>
+            class restaurantManager {
+                constructor(restauruntArr) {
+                    this.restaurantList = restauruntArr;
+                }
+
+                printAllRestaurantNames(){
+                    /*for(var i=0; i<restaurantList.length; i++) {
+                        document.write(restaurantList[i].name);
+                    }*/
+                    return this.restaurantList.map((restaurantManager) => restaurantManager.name)
+                }
+
+                filterRestaurantByCity(city){
+                for(var i=0; i<restaurantList.length; i++) {
+                    if(restaurantList[i].city==city)
+                    {
+                        document.write(restaurantList[i]);
+                    }
+                }
+            }
+            }
+            
+            let rest = [
+                    {
+                        "name": "Carrom Cafe",
+                        "address": "Jaistmbh, Ratnagiri",
+                        "city": "Ratnagiri"
+                    },
+                    {
+                        "name": "kjhgfd",
+                        "address": "",
+                        "city": ""
+                    },
+                    {
+                        "name": "lkjhgf",
+                        "address": "",
+                        "city": ""
+                    }];
+            let myRest = new restaurantManager(rest);
+
+            myRest.printAllRestaurantNames();
+             
+
+            /*
+        
+        printAllRestaurantNames();
+
+        filterRestaurantByCity("Ratnagiri");*/
+            
+
+
+        </script>
+
+    </body>
+</html>
